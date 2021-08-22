@@ -1,0 +1,25 @@
+<table>
+<tbody>
+<% if @error %>
+    The bookshelf ID could not be found.
+<%else%>
+<% @shelf_volumes['items'].each do |t|%>
+<tr>
+    <td>   
+    <h2><%= t['volumeInfo']['title']%></h2>
+    <h3><% t['volumeInfo']['authors'].each do |a|%>
+        <%= a %> |
+    <%end%></h3>
+    <%= t['volumeInfo']['publisher']%>
+    <%= t['volumeInfo']['publishedDate']%>
+    <%= t['volumeInfo']['description']%>
+    Page Count: <%= t['volumeInfo']['pageCount']%>
+    <%= t['volumeInfo']['title']%>
+    <%= t['volumeInfo']['title']%>
+    </td>
+</tr>
+<%end%>
+<%end%>
+
+</tbody>
+</table>

@@ -1,0 +1,19 @@
+<% if @error %>
+    Volume ID not Found
+<%else%>
+    <h1><%= @volume['volumeInfo']['title']%></h1>
+    <h2><%= @volume['volumeInfo']['subtitle']%></h2>
+    <h3><% @volume['volumeInfo']['authors'].each do |a|%>
+            <%= a %> | 
+        <%end%> 
+    </h3>
+    <span><%= @volume['volumeInfo']['publisher']%>
+
+    <p><%= @volume['volumeInfo']['description']%><p>
+<%end%>
+
+    
+
+
+
+<%# # http://localhost:3000/volumes?volume_Id=zyTCAlFPjgYC %>

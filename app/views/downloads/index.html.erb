@@ -1,0 +1,35 @@
+<table>
+<tbody>
+<% if @error %>
+    Book not found
+<%elsif @not_in_list %>
+    Book not in list
+<%else%>
+    <% @items.each do |b| %>
+    <tr>
+        <td>    
+            <h1><%= b['volumeInfo']['title'] %></h1>
+            <h2><%= b['volumeInfo']['subtitle'] %></h2>
+            <h3>
+                <% b['volumeInfo']['authors'].each do |a| %>
+                    <%= a %> |
+                <%end%>
+            </h3>
+            <div><%= b['volumeInfo']['description'] %></div>   
+
+            <div>
+                <% if b['volumeInfo']['publisher'] != nil %> 
+                <%= b['volumeInfo']['publisher'] %>,
+                <%else%>
+                <%= b['volumeInfo']['publisher'] %>
+                <%end%>
+                <%= b['volumeInfo']['publishedDate'] %>
+                <div><%= link_to 'Download', b['accessInfo']['epub']['acsTokenLink']%></div>  
+            </div>           
+        </td>
+    </tr>
+<%end%>
+<%end%>
+
+</tbody>
+</table>

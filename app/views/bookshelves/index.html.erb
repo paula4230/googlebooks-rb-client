@@ -1,0 +1,19 @@
+<table>
+<tbody>
+<% if @error %>
+    The bookshelf ID could not be found.
+<%else%>
+<% @bookshelves['items'].each do |b|%>
+<tr>
+    <td>   
+    <h1><%= b['title']%></h1>
+    <h2>Shelf ID:<%= b['id']%></h2>
+    <div>Access: <%= b['access']%></div>
+    <div>Volume Count:<%= b['volumeCount']%></div>
+    </td>
+</tr>
+<%end%>
+<%end%>
+
+</tbody>
+</table>
