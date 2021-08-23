@@ -56,4 +56,4 @@ There are five endpoints for this client, namely:
   <ul>If the queries are not found, <a href='https://github.com/paula4230/googlebooks-rb-client/blob/main/app/apis/google_books/v1/client.rb'> Runtime Error</a> exception is raised.</ul>
 
 <h2>LIMITATION</h2>
-<div>Only five endpoints were featured in this client, but there are other endpoints that can be accessed as well. These require an OAuth token, such as: GET requests to retrieve the lists of all bookshelves of user and POST requests to add and remove books from a user's shelf. For the full lists of all endpoints, please see <a href='https://developers.google.com/books/docs/v1/using#intro'> documentation <a>.</div>
+<div>Only five endpoints were featured in this client, but there are other endpoints that can be accessed as well. These require an OAuth token, such as: GET requests to retrieve the lists of all bookshelves of user and POST requests to add and remove books from a user's shelf. For the full list of all endpoints, please see <a href='https://developers.google.com/books/docs/v1/using#intro'> documentation <a>.</div>
