@@ -18,19 +18,42 @@ There are five endpoints for this client, namely:
 <ul>6. Start the rails server by typing <strong>bin/rails server</strong> or <strong>bin/rails s</strong>.</ul>
 <ul>  
   7. In the <strong>client.rb</strong> file under the apps/apis/google_books/v1 directory, input the generated API key here
-      <div><img src='initialize.png'></img></div>
+      <ol><div><img src='initialize.png'></img></div></ol>
 </ul>
 <ul>8. To configure an instance of the client: 
       <ol>
       <div><strong>@client = GoogleBooks::V1::Client.new</strong></div>
       </ol>
  </ul>
-<ul>6.Each of the endpoints can be accessed as follows:
-  <ul></ul>
-  <ul></ul>
-  <ul></ul>
-  <ul></ul>
-  <ul></ul>
+<ul>6.Each of the endpoints can be fetched as follows:
+  <ul>
+    <ol>
+      <div>Books</div>
+      <div>@client.book_info(params[:book_title])</div>
+      <div>e.g.</div>
+      <div>@client.book_info('PrideandPrejudice)</div>
+     </ol>
+  </ul>
+  <ul>
+    <ol>
+      <div></div>
+     </ol>
+  </ul>
+  <ul>
+    <ol>
+      <div></div>
+     </ol>
+  </ul>
+  <ul>
+    <ol>
+      <div></div>
+     </ol>
+  </ul>
+  <ul>
+    <ol>
+      <div></div>
+     </ol>
+  </ul>
 </ul>
   <ul>6. In each of the controllers, the APIs are already contained in their respective wrappers and each of the controllers have a corresponding view file. However, views can be customized depending on the user.</ul>
   
