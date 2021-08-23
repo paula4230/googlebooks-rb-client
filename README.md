@@ -50,7 +50,7 @@ There are five endpoints for this client, namely:
   </ol>
 </ul>
 
-<ul>There are built-in views for each endpoints, but user can customize as necessary. Please see Ruby on Rails Guides (v6.1.4) on how to configure <a href='https://guides.rubyonrails.org/layouts_and_rendering.html'>views<a>, <a href='https://guides.rubyonrails.org/action_controller_overview.html'> controllers <a>, and<a href='https://guides.rubyonrails.org/routing.html'>routes<a>.</ul>
+<ul>There are built-in views for each endpoints, but user can customize as necessary. Please see Ruby on Rails Guides (v6.1.4) on how to configure <a href='https://guides.rubyonrails.org/layouts_and_rendering.html'>views<a>, <a href='https://guides.rubyonrails.org/action_controller_overview.html'> controllers<a>, and <a href='https://guides.rubyonrails.org/routing.html'> routes<a>.</ul>
 
 <h2>ERROR</h2>
   <ul>If the queries are not found, <a href='https://github.com/paula4230/googlebooks-rb-client/blob/main/app/apis/google_books/v1/client.rb'> Runtime Error</a> exception is raised.</ul>
