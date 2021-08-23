@@ -21,7 +21,9 @@ There are five endpoints for this client, namely:
       <div><img src='initialize.png'></img></div>
 </ul>
 <ul>8. To configure an instance of the client: 
+      <ol>
       <div><strong>@client = GoogleBooks::V1::Client.new</strong></div>
+      </ol>
  </ul>
 <ul>6.Each of the endpoints can be accessed as follows:
   <ul></ul>
