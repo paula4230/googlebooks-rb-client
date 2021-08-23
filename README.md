@@ -1,10 +1,11 @@
 # google-books-ruby-client
 
 A Ruby client for the <a href='https://developers.google.com/books/docs/overview'> Google Books API <a>.
-  
+
+<ul>The <a href ='https://books.google.com/'>Google Books</a> website contains a vast resource of information for readers and researchers alike. Its API enables developers to customize searches that are not limited to Book titles only and this client aims to allow a user to fetch resources using the <strong>GET</strong> request which only requires an API key as authentication.</ul>
   
 <h2>ENDPOINTS</h2>
-  The <a href ='https://books.google.com/'>Google Books</a> website contains a vast resource of information for readers and researchers alike. Its API enables developers to customize searches that are not limited to Book titles only and this client aims to allow a user to fetch resources using the <strong>GET</strong> request which only requires an API key as authentication. There are five endpoints for this client, namely:
+There are five endpoints for this client, namely:
   <ul>1. Books - gives a list of books containing keywords from the search parameters.</ul>
   <ul>2. Downloads - similar to #1, however, search is limited to books that can be downloaded and accessed thru an ebook reader.</ul>
   <ul>3. Volume ID - gives a single book from the given volume ID. Since each volume ID is unique, is must be explicitly entered by the user.</ul>
@@ -52,5 +53,5 @@ A Ruby client for the <a href='https://developers.google.com/books/docs/overview
 <ul>There are built-in views for each endpoints, but user can customize as necessary. Please see Ruby on Rails Guides (v6.1.4) on how to configure<a href='https://guides.rubyonrails.org/layouts_and_rendering.html'>views<a>, <a href='https://guides.rubyonrails.org/action_controller_overview.html'> controllers<a>, and<a href='https://guides.rubyonrails.org/routing.html'>routes<a>.</ul>
 
 <h2>ERROR</h2>
-  <ul>If the queries are not found, <a href='https://github.com/paula4230/googlebooks-rb-client/blob/main/app/apis/google_books/v1/client.rb> Runtime Error exception is raised.'</a></ul>
+  <ul>If the queries are not found, <a href='https://github.com/paula4230/googlebooks-rb-client/blob/main/app/apis/google_books/v1/client.rb'> Runtime Error</a> exception is raised.</ul>
   
