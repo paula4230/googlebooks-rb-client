@@ -2,15 +2,15 @@
 
 A Ruby client for the <a href='https://developers.google.com/books/docs/overview'> Google Books API <a>.
 
-<ul>The <a href ='https://books.google.com/'>Google Books</a> website contains a vast resource of information for readers and researchers alike. Its API enables developers to customize searches that are not limited to Book titles only and this client aims to allow a user to fetch resources using the <strong>GET</strong> request which only requires an API key as authentication.</ul>
+<div>The <a href ='https://books.google.com/'>Google Books</a> website contains a vast resource of information for readers and researchers alike. Its API enables developers to customize searches that are not limited to Book titles only and this client aims to allow a user to fetch resources using the <strong>GET</strong> request which only requires an API key as authentication.</div>
   
 <h2>ENDPOINTS</h2>
 There are five endpoints for this client, namely:
   <ul>1. Books - gives a list of books containing keywords from the search parameters.</ul>
   <ul>2. Downloads - similar to #1, however, search is limited to books that can be downloaded and accessed thru an ebook reader.</ul>
   <ul>3. Volume ID - gives a single book from the given volume ID. Since each volume ID is unique, is must be explicitly entered by the user.</ul>
-  <ul>4. Bookshelves - gives the list of bookshelves of a user. Each bookshelf ID is specific to a user and must be explicitly entered as well. The contents of a boohshelf can be accessed by checking #5.</ul>
-  <ul>5. Shelf Volumes - gives the list of books from a user's bookshelf. Parameters should include bookshelf ID and shelf ID (which could be found in a user's bookshelf).</ul>
+  <ul>4. Bookshelves - gives the list of PUBLIC bookshelves of a user. Each bookshelf ID is specific to a user and must be explicitly entered as well. The contents of a boohshelf can be accessed by checking #5.</ul>
+  <ul>5. Shelf Volumes - gives the list of books from a user's PUBLIC bookshelf. Parameters should include bookshelf ID and shelf ID (which could be found in a user's bookshelf).</ul>
   
 <h2>USAGE</h2>
 <ul>1. Before anything else, <a href='https://cloud.google.com/docs/authentication/api-keys?visit_id=637652443905382742-2139937274&rd=1'> generate an API key<a>.</ul>
@@ -54,4 +54,6 @@ There are five endpoints for this client, namely:
 
 <h2>ERROR</h2>
   <ul>If the queries are not found, <a href='https://github.com/paula4230/googlebooks-rb-client/blob/main/app/apis/google_books/v1/client.rb'> Runtime Error</a> exception is raised.</ul>
-  
+
+<h2>LIMITATION</h2>
+<div>Only five endpoints were featured in this client, but there are other endpoints that can be accessed as well. These require an OAuth token, such as: GET requests to retrieve the lists of all bookshelves of user and POST requests to add and remove books from a user's shelf. For the full lists of all endpoints, please see <a href='https://developers.google.com/books/docs/v1/using#intro'> documentation <a>.</div>
