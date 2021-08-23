@@ -27,31 +27,25 @@ There are five endpoints for this client, namely:
  </ul>
 <ul>6.Each of the endpoints can be fetched as follows:
     <ol>
-      <div>Books</div>
-      <div>@client.book_info(params[:book_title])</div>
-      <div>e.g.</div>
-      <div>@client.book_info('PrideandPrejudice)</div>
-     </ol>
-  <ul>
-    <ol>
-      <div></div>
-     </ol>
-  </ul>
-  <ul>
-    <ol>
-      <div></div>
-     </ol>
-  </ul>
-  <ul>
-    <ol>
-      <div></div>
-     </ol>
-  </ul>
-  <ul>
-    <ol>
-      <div></div>
-     </ol>
-  </ul>
+      <h4>Books</h4>
+      <ol><div>@client.book_info('PrideandPrejudice')</div></ol>
+    </ol>
+  <ol>
+      <h4>Downloads</h4>
+      <ol><div>@client.epub('PrideandPrejudice')</div></ol>
+    </ol>
+  <ol>
+      <div>Volume ID</div>
+      <ol><div>@client.volume('zyTCAlFPjgYC')</div></ol>
+  </ol>
+  <ol>
+      <div>Bookshelves</div>
+      <ol><div>@client.bookshelf('zyTCAlFPjgYC')</div></ol>
+  </ol>
+  <ol>
+      <div>Shelf Volumes</div>
+      <ol><div>@client.shelf_volume('112895977440900662718', '1002')</div></ol>
+  </ol>
 </ul>
   <ul>6. In each of the controllers, the APIs are already contained in their respective wrappers and each of the controllers have a corresponding view file. However, views can be customized depending on the user.</ul>
   
