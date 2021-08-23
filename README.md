@@ -26,14 +26,12 @@ There are five endpoints for this client, namely:
       </ol>
  </ul>
 <ul>6.Each of the endpoints can be fetched as follows:
-  <ul>
     <ol>
       <div>Books</div>
       <div>@client.book_info(params[:book_title])</div>
       <div>e.g.</div>
       <div>@client.book_info('PrideandPrejudice)</div>
      </ol>
-  </ul>
   <ul>
     <ol>
       <div></div>
