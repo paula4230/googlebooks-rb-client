@@ -18,10 +18,10 @@ There are five endpoints for this client, namely:
 <ul>6. Start the rails server by typing <strong>bin/rails server</strong> or <strong>bin/rails s</strong>.</ul>
 <ul>  
   7. In the <strong>client.rb</strong> file under the apps/apis/google_books/v1 directory, input the generated API key here
-  <div><img src='initialize.png'></img></div>
+      <div><img src='initialize.png'></img></div>
 </ul>
 <ul>8. To configure an instance of the client: 
-  <div><strong>@client = GoogleBooks::V1::Client.new</strong></div>
+      <div><strong>@client = GoogleBooks::V1::Client.new</strong></div>
  </ul>
 <ul>6.Each of the endpoints can be accessed as follows:
   <ul></ul>
