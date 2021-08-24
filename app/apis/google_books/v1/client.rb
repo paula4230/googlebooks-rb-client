@@ -4,7 +4,7 @@ module GoogleBooks
             API_ENDPOINT = 'https://www.googleapis.com'
 
             def initialize
-                @api_key = 'AIzaSyDLjOcdf_yMfwgrYUwkhw7aPZsjExtS7tg'
+                @api_key = 'YourAPIkey'
             end
 
             #BookInfo
