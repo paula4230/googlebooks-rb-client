@@ -2,27 +2,44 @@ module GoogleBooks
     module V1
         class Client
             API_ENDPOINT = 'https://www.googleapis.com'
-            attr_reader :items
 
             def initialize
-                @api_key = 'YourAPIKey'
+                @api_key = 'AIzaSyDLjOcdf_yMfwgrYUwkhw7aPZsjExtS7tg'
             end
+
+            #BookInfo
 
             def book_info(book_title)
-                request(
-                http_method: :get,
-                endpoint: "books/v1/volumes?q=#{book_title}",
-                key: @api_key
-                )
+                request(http_method: :get, endpoint: "books/v1/volumes?q=#{book_title}", key: @api_key)
             end
 
-            def volume(volume_id)
-                request(
-                http_method: :get,
-                endpoint: "books/v1/volumes/#{volume_id}",
-                key: @api_key
-                )
+            #VolumeID
+ 
+            #to access all volume ID details
+            # def volume(volume_id)
+            #     request(http_method: :get, endpoint: "books/v1/volumes/#{volume_id}", key: @api_key)
+            # end
+
+            def volume_title(volume_id)
+                request(http_method: :get, endpoint: "books/v1/volumes/#{volume_id}", key: @api_key)['volumeInfo']['title']
             end
+
+            def volume_subtitle(volume_id)
+                request(http_method: :get, endpoint: "books/v1/volumes/#{volume_id}", key: @api_key)['volumeInfo']['subtitle']
+            end
+
+            def volume_authors(volume_id)
+                request(http_method: :get, endpoint: "books/v1/volumes/#{volume_id}", key: @api_key)['volumeInfo']['authors']
+            end
+
+            def volume_publisher(volume_id)
+                request(http_method: :get, endpoint: "books/v1/volumes/#{volume_id}", key: @api_key)['volumeInfo']['publisher']
+            end
+
+            def volume_description(volume_id)
+                request(http_method: :get, endpoint: "books/v1/volumes/#{volume_id}", key: @api_key)['volumeInfo']['description']
+            end
+
 
             def bookshelf(user_id)
                 request(

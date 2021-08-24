@@ -1,15 +1,15 @@
 <% if @error %>
     Volume ID not Found
 <%else%>
-    <h1><%= @volume['volumeInfo']['title']%></h1>
-    <h2><%= @volume['volumeInfo']['subtitle']%></h2>
-    <h3><% @volume['volumeInfo']['authors'].each do |a|%>
+    <h1><%= @volume_title%></h1>
+    <h2><%= @volume_subtitle%></h2>
+    <h3><% @volume_authors.each do |a|%>
             <%= a %> | 
         <%end%> 
     </h3>
-    <span><%= @volume['volumeInfo']['publisher']%>
+    <span><%= @volume_publisher%>
 
-    <p><%= @volume['volumeInfo']['description']%><p>
+    <p><%= @volume_description%><p>
 <%end%>
 
     
