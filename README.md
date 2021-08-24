@@ -38,7 +38,12 @@ There are five endpoints for this client, namely:
     </ol>
   <ol>  
       <h4>Volume ID</h4>
-      <ol><div>@client.volume('zyTCAlFPjgYC')</div></ol>
+      <ol><div>@client.volume_title('zyTCAlFPjgYC')</div></ol>
+      <ol><div>@client.volume_subtitle('zyTCAlFPjgYC')</div></ol>
+      <ol><div>@client.volume_authors('zyTCAlFPjgYC')</div></ol>
+      <ol><div>@client.volume_publisher('zyTCAlFPjgYC')</div></ol>
+      <ol><div>@client.volume_description('zyTCAlFPjgYC')</div></ol>
+      
   </ol>
   <ol>
       <h4>Bookshelves</h4>
